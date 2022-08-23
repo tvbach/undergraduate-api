@@ -116,7 +116,7 @@ GEM
       net-protocol
       timeout
     nio4r (2.5.8)
-    nokogiri (1.13.6-x86_64-darwin)
+    nokogiri (1.13.6-x86_64-linux)
       racc (~> 1.4)
     pry (0.13.1)
       coderay (~> 1.1)
@@ -125,8 +125,6 @@ GEM
       nio4r (~> 2.0)
     racc (1.6.0)
     rack (2.2.3.1)
-    rack-cors (1.1.1)
-      rack (>= 2.0.0)
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
     rails (7.0.3)
@@ -169,7 +167,9 @@ GEM
     zeitwerk (2.5.4)
 
 PLATFORMS
+  aarch64-linux
   x86_64-darwin-21
+  x86_64-linux
 
 DEPENDENCIES
   bcrypt (~> 3.1.7)
@@ -180,12 +180,11 @@ DEPENDENCIES
   mysql2 (~> 0.5)
   pry (~> 0.13.1)
   puma (~> 5.0)
-  rack-cors
   rails (~> 7.0.3)
   tzinfo-data
 
 RUBY VERSION
-   ruby 3.1.0p0
+   ruby 3.1.2p20
 
 BUNDLED WITH
    2.3.3

@@ -4,7 +4,9 @@ default: &default
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   username: <%= ENV['usernameDB'] %>
   password: <%= ENV['passwordDB'] %>
-  socket: /tmp/mysql.sock
+  host: <%= ENV['hostName'] %>
+  port: <%= ENV['port'] %>
+  socket: /var/run/mysqld/mysqld.sock
 
 development:
   <<: *default

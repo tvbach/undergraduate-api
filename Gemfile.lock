@@ -89,6 +89,9 @@ GEM
     io-console (0.5.11)
     irb (1.4.1)
       reline (>= 0.3.0)
+    jbuilder (2.11.5)
+      actionview (>= 5.0.0)
+      activesupport (>= 5.0.0)
     jwt (2.3.0)
     loofah (2.18.0)
       crass (~> 1.0.2)
@@ -116,6 +119,10 @@ GEM
       net-protocol
       timeout
     nio4r (2.5.8)
+    nokogiri (1.13.6-aarch64-linux)
+      racc (~> 1.4)
+    nokogiri (1.13.6-x86_64-darwin)
+      racc (~> 1.4)
     nokogiri (1.13.6-x86_64-linux)
       racc (~> 1.4)
     pry (0.13.1)
@@ -176,6 +183,7 @@ DEPENDENCIES
   bootsnap
   debug
   dotenv-rails
+  jbuilder
   jwt
   mysql2 (~> 0.5)
   pry (~> 0.13.1)
@@ -184,7 +192,7 @@ DEPENDENCIES
   tzinfo-data
 
 RUBY VERSION
-   ruby 3.1.2p20
+   ruby 3.0.4p208
 
 BUNDLED WITH
    2.3.3
